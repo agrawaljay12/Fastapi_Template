@@ -58,47 +58,47 @@ This is a starter template for building FastAPI applications following clean arc
 
 backend-template/
 │
-├── app/                         # Application entry & setup
+├── app/                        # Application entry & setup
 │   ├── __init__.py
-│   ├── main.py                  # App entry point (uvicorn runs this)
-│   ├── server.py                # FastAPI app creation
-│   └── routes_register.py       # Route registration
+│   ├── main.py                 # App entry point (uvicorn runs this)
+│   ├── server.py               # FastAPI app creation
+│   └── routes_register.py      # Route registration
 │
-├── config/                      # Configuration
+├── config/                     # Configuration
 │   ├── __init__.py
-│   └── db.py                    # Database connection (Mongo / SQL)
+│   └── db.py                   # Database connection (Mongo / SQL)
 │
-├── core/                        # Core shared utilities
+├── core/                       # Core shared utilities
 │   ├── __init__.py
-│   ├── core.py                  # Settings / env loader
-│   ├── dependency.py            # Common dependencies (JWT, DB)
-│   └── messages.py              # ✅ Centralized messages (ADD THIS)
+│   ├── core.py                 # Settings / env loader
+│   ├── dependency.py           # Common dependencies (JWT, DB)
+│   └── messages.py             # Centralized messages
 │
-├── models/                      # DB models
+├── models/                     # DB models
 │   ├── __init__.py
-│   └── users.py                 # User DB model
+│   └── users.py                # User DB model
 │
-├── schemas/                     # Request/Response schemas (ADD)
+├── schemas/                    # Request/Response schemas
 │   ├── __init__.py
-│   └── user_schema.py           # Pydantic schemas
+│   └── user_schema.py          # Pydantic schemas
 │
-├── controllers/                 # Business logic
+├── controllers/                # Business logic
 │   ├── __init__.py
 │   └── user_controller.py
 │
-├── routes/                      # API routes
+├── routes/                     # API routes
 │   ├── __init__.py
-│   ├── v1/                      # API versioning (OPTIONAL BUT PRO)
-│   │   ├── __init__.py
-│   │   └── user_routes.py
+│   └── v1/                     # API versioning
+│       ├── __init__.py
+│       └── user_routes.py
 │
-├── tests/                       # Test cases
+├── tests/                      # Test cases
 │   ├── __init__.py
 │   └── test_user.py
 │
-├── venv/                        # Virtual environment (ignored)
-├── .env                         # Environment variables (ignored)
-├── .env.example                 # Env template
+├── venv/                       # Virtual environment (ignored)
+├── .env                        # Environment variables (ignored)
+├── .env.example                # Env template
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
