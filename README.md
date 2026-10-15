@@ -56,6 +56,9 @@ This is a starter template for building FastAPI applications following clean arc
 ---
 ### backend folder structure 
 
+## 📁 Project Structure
+
+​```text
 backend-template/
 │
 ├── app/                        # Application entry & setup
@@ -104,6 +107,7 @@ backend-template/
 ├── requirements.txt
 ├── setup.bat
 └── run.bat
+​```
 
 
 
